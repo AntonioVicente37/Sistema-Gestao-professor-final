@@ -12,7 +12,9 @@ namespace BLL
     public class BLLAnoLetivo
     {
         private DALConexao conexao;
-
+        /// <summary>
+        /// / testando o primerio commit de atualização
+        /// </summary>
         public BLLAnoLetivo(DALConexao cx)
         {
             this.conexao = cx;
