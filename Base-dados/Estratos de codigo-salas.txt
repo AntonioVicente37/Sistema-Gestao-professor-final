@@ -1,0 +1,40 @@
+select num_sala,descricao from t_sala;
+insert into t_sala (num_sala,descricao)values ('1','Sala de  aulas comum, encontra-se no rei do chão ');
+insert into t_sala (num_sala,descricao)values ('2','Sala de  aulas comum, encontra-se no rei do chão ');
+insert into t_sala (num_sala,descricao)values ('3','Sala de  aulas comum, encontra-se no rei do chão ');
+insert into t_sala (num_sala,descricao)values ('5','Sala de  aulas comum, encontra-se no rei do chão ');
+insert into t_sala (num_sala,descricao)values ('6','Sala de  aulas comum. encontra-se no rei do chão ');
+insert into t_sala (num_sala,descricao)values ('7','Sala de  aulas comum, encontra-se no rei do chão ');
+insert into t_sala (num_sala,descricao)values ('8','Sala de  aulas comum, encontra-se no 1ª');
+insert into t_sala (num_sala,descricao)values ('9','Sala de  aulas comum, encontra-se no 1ª ');
+insert into t_sala (num_sala,descricao)values ('10','Sala de aulas comum, encontra-se no 1ª ');
+insert into t_sala (num_sala,descricao)values ('11','Sala de aulas comum, encontra-se no 1ª');
+insert into t_sala (num_sala,descricao)values ('12','Sala de aulas comum, encontra-se no 1ª');
+insert into t_sala (num_sala,descricao)values ('13','Sala de aulas comum, encontra-se no 1ª');
+insert into t_sala (num_sala,descricao)values ('14','Sala de aulas onde são realizadas as aulas de desenho tecnico, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('15','Sala de aulas comum, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('16','Sala de aulas comum, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('17','Sala de aulas comum, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('18','Sala de aulas comum, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('19A','Sala de aulas comum, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('19B','Sala de aulas comum, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('20A','Sala de aulas comum, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('20B','Sala de aulas comum, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('21','Sala de aulas comum, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('22','Sala de aulas comum, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('Laboratório.H','Sala onde são lecionadas as aulas de TREI, encontra-se no 1ª');
+insert into t_sala (num_sala,descricao)values ('Laboratório de química','Sala onde são lecionadas as aulas de Quíimica, encontra-se no 1ª');
+insert into t_sala (num_sala,descricao)values ('Laboratório de física','Sala onde são lecionadas as aulas de física. está encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('Láboratório de IE','Sala onde são lecionadas as aulas de instalações electricas, encontra-se no rei do chão ');
+insert into t_sala (num_sala,descricao)values ('Laboratório de ME','Sala onde são lecionadas as aulas de Maquínas electricas, encontra-se no rei do chão ');
+insert into t_sala (num_sala,descricao)values ('Sala de reuniões','Sala onde são feitas as reuniões e lecionadas as aulas de MO, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('Ginásio 1','Sala onde são realizadas as aulas de educação física, encontra-se no 1ª');
+insert into t_sala (num_sala,descricao)values ('Ginásio 2','Sala onde são realizadas as aulas de educação física, encontra-se no 2ª');
+insert into t_sala (num_sala,descricao)values ('Laboratório 1','Sala onde são lecionadas as aulas proticas das diciplinas relacionadas aos cursos tecnicos, encontra-se no rei do chão');
+insert into t_sala (num_sala,descricao)values ('Laboratório 2','Sala onde são lecionadas as aulas proticas das diciplinas relacionadas aos cursos tecnicos, encontra-se no rei do chão');
+insert into t_sala (num_sala,descricao)values ('Laboratório 3','Sala onde são lecionadas as aulas proticas das diciplinas relacionadas aos cursos tecnicos, encontra-se 1ª');
+insert into t_sala (num_sala,descricao)values ('Laboratório 4','Sala onde são lecionadas as aulas proticas das diciplinas relacionadas aos cursos tecnicos, encontra-se 1ª');
+insert into t_sala (num_sala,descricao)values ('Laboratório 5','Sala onde são lecionadas as aulas proticas das diciplinas relacionadas aos cursos tecnicos, encontra-se no 2ª');
+
+
+

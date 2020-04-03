@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BDB560E-1E39-4C49-B9A3-DC261804CFAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUE</RootNamespace>
+    <AssemblyName>SGPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\User\3D Objects\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>SGPI</ProductName>
+    <PublisherName>BattecSolution</PublisherName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Alda-Lara Picture.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B1B88FF100E55C6947680FB5CA09BFF5E167948D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>GUE_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.5.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAjuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjuda.Designer.cs">
+      <DependentUpon>frmAjuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnimacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnimacao.Designer.cs">
+      <DependentUpon>frmAnimacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackupDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackupDados.Designer.cs">
+      <DependentUpon>frmBackupDados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaCo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaCo.Designer.cs">
+      <DependentUpon>frmCaCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaCu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaCu.Designer.cs">
+      <DependentUpon>frmCaCu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaDi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaDi.Designer.cs">
+      <DependentUpon>frmCaDi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaDL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaDL.Designer.cs">
+      <DependentUpon>frmCaDL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCAnoLe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCAnoLe.Designer.cs">
+      <DependentUpon>frmCAnoLe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaPrens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaPrens.Designer.cs">
+      <DependentUpon>frmCaPrens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaPro.Designer.cs">
+      <DependentUpon>frmCaPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaProfessor.Designer.cs">
+      <DependentUpon>frmCaProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaSala.Designer.cs">
+      <DependentUpon>frmCaSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaTu.Designer.cs">
+      <DependentUpon>frmCaTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaUtilizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaUtilizador.Designer.cs">
+      <DependentUpon>frmCaUtilizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCDiAdministrativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCDiAdministrativa.Designer.cs">
+      <DependentUpon>frmCDiAdministrativa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCMunicip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCMunicip.Designer.cs">
+      <DependentUpon>frmCMunicip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDM.Designer.cs">
+      <DependentUpon>frmDM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDPedago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDPedago.Designer.cs">
+      <DependentUpon>frmDPedago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHorario.Designer.cs">
+      <DependentUpon>frmHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM.Designer.cs">
+      <DependentUpon>frmM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageBox.Designer.cs">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecuperarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecuperarSenha.Designer.cs">
+      <DependentUpon>frmRecuperarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoUtilizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoUtilizador.Designer.cs">
+      <DependentUpon>frmTipoUtilizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTL.Designer.cs">
+      <DependentUpon>frmTL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\impalsgpDataSetProfessor1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impalsgpDataSetProfessor1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\GprofessimpalsgpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GprofessimpalsgpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\frmDiciplinaProfeLeciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\frmDiciplinaProfeLeciona.Designer.cs">
+      <DependentUpon>frmDiciplinaProfeLeciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\frmHoProva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\frmHoProva.Designer.cs">
+      <DependentUpon>frmHoProva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\frmPresencaProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\frmPresencaProfessor.Designer.cs">
+      <DependentUpon>frmPresencaProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\frmRelatorioHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\frmRelatorioHorario.Designer.cs">
+      <DependentUpon>frmRelatorioHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\frmRlatorioGeProfesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\frmRlatorioGeProfesso.Designer.cs">
+      <DependentUpon>frmRlatorioGeProfesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\frmTurmaProfessorLeciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\frmTurmaProfessorLeciona.Designer.cs">
+      <DependentUpon>frmTurmaProfessorLeciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relatorio\frmGeRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\frmGeRelatorio.Designer.cs">
+      <DependentUpon>frmGeRelatorio.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAjuda.resx">
+      <DependentUpon>frmAjuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnimacao.resx">
+      <DependentUpon>frmAnimacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackupDados.resx">
+      <DependentUpon>frmBackupDados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaCo.resx">
+      <DependentUpon>frmCaCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaCu.resx">
+      <DependentUpon>frmCaCu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaDi.resx">
+      <DependentUpon>frmCaDi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaDL.resx">
+      <DependentUpon>frmCaDL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCAnoLe.resx">
+      <DependentUpon>frmCAnoLe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaPrens.resx">
+      <DependentUpon>frmCaPrens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaPro.resx">
+      <DependentUpon>frmCaPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaProfessor.resx">
+      <DependentUpon>frmCaProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaSala.resx">
+      <DependentUpon>frmCaSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaTu.resx">
+      <DependentUpon>frmCaTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaUtilizador.resx">
+      <DependentUpon>frmCaUtilizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCDiAdministrativa.resx">
+      <DependentUpon>frmCDiAdministrativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCMunicip.resx">
+      <DependentUpon>frmCMunicip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDM.resx">
+      <DependentUpon>frmDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDPedago.resx">
+      <DependentUpon>frmDPedago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHorario.resx">
+      <DependentUpon>frmHorario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM.resx">
+      <DependentUpon>frmM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessageBox.resx">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecuperarSenha.resx">
+      <DependentUpon>frmRecuperarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoUtilizador.resx">
+      <DependentUpon>frmTipoUtilizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTL.resx">
+      <DependentUpon>frmTL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Relatorio\frmDiciplinaProfeLeciona.resx">
+      <DependentUpon>frmDiciplinaProfeLeciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\frmGeRelatorio.resx">
+      <DependentUpon>frmGeRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\frmHoProva.resx">
+      <DependentUpon>frmHoProva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\frmPresencaProfessor.resx">
+      <DependentUpon>frmPresencaProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\frmRelatorioHorario.resx">
+      <DependentUpon>frmRelatorioHorario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\frmRlatorioGeProfesso.resx">
+      <DependentUpon>frmRlatorioGeProfesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\frmTurmaProfessorLeciona.resx">
+      <DependentUpon>frmTurmaProfessorLeciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\Report1.rdlc" />
+    <EmbeddedResource Include="Relatorio\Report2.rdlc" />
+    <EmbeddedResource Include="Relatorio\Report3.rdlc" />
+    <EmbeddedResource Include="Relatorio\Report4.rdlc" />
+    <EmbeddedResource Include="Relatorio\rpGprofessor12.rdlc" />
+    <EmbeddedResource Include="Relatorio\rpHProva.rdlc" />
+    <EmbeddedResource Include="Relatorio\rpPresenaProfessor.rdlc" />
+    <None Include="GUE_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Relatorio\impalsgpDataSetProfessor1.xsc">
+      <DependentUpon>impalsgpDataSetProfessor1.xsd</DependentUpon>
+    </None>
+    <None Include="Relatorio\impalsgpDataSetProfessor1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impalsgpDataSetProfessor1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Relatorio\impalsgpDataSetProfessor1.xss">
+      <DependentUpon>impalsgpDataSetProfessor1.xsd</DependentUpon>
+    </None>
+    <None Include="Relatorio\GprofessimpalsgpDataSet.xsc">
+      <DependentUpon>GprofessimpalsgpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Relatorio\GprofessimpalsgpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GprofessimpalsgpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Relatorio\GprofessimpalsgpDataSet.xss">
+      <DependentUpon>GprofessimpalsgpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{d36e0064-a07a-4b00-96df-04dc5bae759d}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{9c11de5e-7d1e-4950-a820-fd5214d46086}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ferramenta\Ferramenta.csproj">
+      <Project>{c876b4b5-4d4b-4345-b125-95d56166fc3e}</Project>
+      <Name>Ferramenta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{26d884b8-5e0a-4ca9-aaf7-3bc19e0852fc}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMO2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimazar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile-Menu-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prodcutos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapturarAdmin.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapturarCadas.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapturarConsulat.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapturarGestaAca.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapturarHelp.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapturarProfessor.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Alda-Lara Picture.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

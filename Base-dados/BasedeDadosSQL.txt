@@ -1,0 +1,160 @@
+create database impalsgpi;
+use impalsgpi;
+
+create table t_tipoUtilizador(
+id_tipoUtilizador int primary key not null,
+utilizador varchar(30),
+dataCadastro date,
+dataActualizacao date
+);
+create table t_Utilizador(
+id_Utilizador int primary key not null,
+username varchar(30),
+passworde varchar(30),
+id_tipoUtilizador int,
+dataCadastro date,
+dataActualizacao date
+);
+create table t_Secretariado(
+id_secretariado int primary key not null,
+id_municipio int,
+nome varchar(50),
+telefone varchar(13),
+B_I varchar(70),
+foto image,
+email varchar(50),
+sexo varchar(1),
+dataCadastro date,
+dataActualizacao date
+);
+create table t_DirePedagogica(
+id_dipedagogica int primary key not null,
+id_municipio int,
+nome varchar(50),
+telefone varchar(13),
+B_I varchar(70),
+foto image,
+email varchar(50),
+sexo varchar(1),
+dataCadastro date,
+dataActualizacao date
+);
+create table t_municipio(
+id_municipio int primary key not null,
+distrito varchar(50),
+bairro varchar(50)
+);
+create table t_dp_leciona(
+id_dp_leciona int primary key not null,
+num_agente int,
+id_turma int,
+descricao varchar(500)
+);
+create table t_disciplina(
+id_disciplina int primary key not null,
+num_agente int not null,
+id_curso int not null,
+id_coordenacao int,
+disciplina varchar(30),
+componente varchar(30),
+carga_horaria varchar(10)
+);
+create table t_preseProfessor(
+id_presenca int primary key not null,
+num_agente int,
+presenca varchar(30),
+data date,
+hora_entrada time(4),
+hora_saida time(4)
+);
+
+create table t_sala (
+id_sala int primary key not null,
+sala varchar (10) not null,
+descricao varchar (500)  
+);
+create table ano_letivo(
+id_anoletivo int primary key not null,
+ano varchar(4),
+decricao varchar(500)
+);
+
+create table t_curso (
+id_curso int primary key not null,
+curso varchar (50) not null,
+area_formacao varchar(20)
+);
+
+create table t_relatorio(
+id_relatorio int primary key not null,
+id_semana int not null,
+id_sala int not null,
+id_pessoa int not null,
+id_disciplina int not null,
+id_turma int not null,
+id_cordenacao int not null,
+id_prova int not null,
+reducao_horario varchar
+);
+
+create table t_cordenacao(
+id_coordenacao int primary key not null,
+num_agente int,
+id_anoletivo int,
+coordenacao varchar(50)
+);
+
+create table t_horario(
+id_semana int primary key not null,
+num_agente int not null,
+id_turma int not null,
+id_sala int not null,
+id_disciplina int not null,
+semana varchar(50),
+tempo varchar (10),
+hora_inicial time(4),
+hora_final time(4)
+);
+
+create table t_Mprova(
+id_prova int primary key not null,
+id_horario int not null,
+num_agente int not null,
+id_sala int not null,
+id_disciplina int not null,
+id_turma int not null,
+id_coordenacao int not null,
+id_anoletivo int not null,
+mes_prova varchar(30),
+tipo_prova varchar(20),
+hora_inicial time(4),
+hora_final time(4)
+);
+
+create table t_professor(
+num_agente int primary key not null,
+id_municipio int,
+nome varchar(50),
+telefone varchar(13),
+B_I varchar(50),
+foto image,
+email varchar(50),
+sexo varchar(1),
+dataCadastro date,
+dataActualizacao date
+);
+
+create table t_p_aulas(
+id_aulas int primary key not null,
+id_turma int not null,
+num_agente int not null,
+director_turma varchar(20)
+);
+
+create table t_turma(
+id_turma int primary key not null,
+id_anoletivo int not null,
+id_curso int not null,
+turma varchar(20),
+periodo varchar(10)
+);

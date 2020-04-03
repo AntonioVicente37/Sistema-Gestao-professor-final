@@ -1,0 +1,17 @@
+create proc DashboardDados
+@nsala int out, 
+@ncurso int out,
+@ndisciplina int out,
+@nprofessor int out,
+@nturma int out,
+@ncoordenacao int out,
+@nprova int out 
+as
+set @nsala=(select count(id_sala) as TotSala from t_sala)
+set  @ncurso=(select count(id_curso) as TotCurso from t_curso)
+set @ndisciplina=(select count(id_disciplina) as TotDisciplina from t_disciplina)
+set @nprofessor=(select count(num_agente) as TotProfessor from t_professor)
+set @nturma=(select count(id_turma) as TotTurma from t_turma)
+set @ncoordenacao=(select count(id_coordenacao) as TotCoordenacao from t_cordenacao)
+set @nprova=(select count(id_prova) as TotProva from t_Mprova)
+go

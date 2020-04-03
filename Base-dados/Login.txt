@@ -1,0 +1,90 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+namespace Tela_de_entrada
+{
+    public partial class frmLogin : Form
+    {
+        SqlConnection sqlconn = null;
+        private string strconn = @"Data Source=DESKTOP-A8P155U\SQLEXPRESS; initial catalog = t_Utilizador;Integrated Security=True;";
+        private string _Sql = string.Empty;
+        public bool logado = false;
+        public frmLogin()
+        {
+            InitializeComponent();
+        }
+
+        public void logar()
+        {
+            sqlconn = new SqlConnection(strconn);
+
+            string usu, pwd; 
+            try
+            {
+                usu = tb_utilizador.Text;
+                pwd = tb_pasworde.Text;
+
+                _Sql = "SELECT COUNT(id_utilizador) FROM t_usuario WHERE username = @username AND passworde = @passworde ";
+
+                SqlCommand cmd = new SqlCommand(_Sql,sqlconn);
+                cmd.Parameters.Add("@username", SqlDbType.VarChar).Value = usu;
+                cmd.Parameters.Add("@passworde", SqlDbType.VarChar).Value = pwd;
+                sqlconn.Open();
+
+                int v = (int)cmd.ExecuteScalar();
+
+                if (v > 0)
+                {
+                    if (txtCargo.Text == "Administrador")
+                    {
+                        Formulario_principal f = new Formulario_principal();
+                        f.lblPermissao.Text = "Administrador";
+                        MessageBox.Show("Logado com Sucesso");
+                        logado = true;
+                        this.Dispose();
+                    }
+                    if (txtCargo.Text == "Professor")
+                    {
+                        Formulario_principal f = new Formulario_principal();
+                        f.lblPermissao.Text = "Professor";
+                        MessageBox.Show("Logado com Sucesso");
+                        logado = true;
+                        this.Dispose();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao logar");
+                    logado = false;
+                }
+            }
+            catch(SqlException erro)
+            {
+                MessageBox.Show(erro +"No Banco");
+            }
+        }
+
+        private void Entrar_Click(object sender, EventArgs e)
+        {
+            logar();
+        }
+
+        private void Cancelar_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
